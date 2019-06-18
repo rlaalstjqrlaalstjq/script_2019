@@ -1,4 +1,4 @@
-from urllib.request import urlopen
+﻿from urllib.request import urlopen
 from urllib.parse import urlencode
 import urllib
 import xml.etree.ElementTree as ET
@@ -29,7 +29,7 @@ def getMaps(string):
         'address': string,
         'sensor': 'false',
         'language' : 'ko',
-        'key' : 'AIzaSyDeBuTb4eke7Z5P5QgRy0puEdvK8pEpv5k'
+        'key' : '' #openapi key로써, 가려둠
     }
     url = 'https://maps.google.com/maps/api/geocode/json?' + urllib.parse.urlencode(urlParams)
     response = requests.get(url)
